@@ -8,7 +8,7 @@ const config = dotenv.parse(fs.readFileSync('.env'));
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
-    version: "0.6.11",
+    version: "0.8.18",
     settings: {
       optimizer: {
         enabled: true,
