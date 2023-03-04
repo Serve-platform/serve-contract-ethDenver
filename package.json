@@ -6,9 +6,12 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "deploy:mumbai:serveway": "npx hardhat run --network mumbai scripts/Serveway.deploy.js",
-    "verify:mumbai:serveway": "npx hardhat verify --contract contracts/Serveway.sol:Serveway --network mumbai 0x1Ab49e94aB7A61f8574aA162fC89bB0cB0945629",
+    "verify:mumbai:serveway": "npx hardhat verify --contract contracts/Serveway.sol:Serveway --network mumbai 0xA6f00218efb6c0Fe4C53d01b2195e09A1E1a8523",
     "deploy:mumbai:serveNFT": "npx hardhat run --network mumbai scripts/ServeNFT.deploy.js",
     "verify:mumbai:serveNFT": "npx hardhat verify --contract contracts/ServeNFT.sol:ServeNFT --network mumbai 0x7c6A7fFb4837298bcD606B86A59958ed50b4d34F",
+    "deploy:mumbai:SigVerifier": "npx hardhat run --network mumbai scripts/SigVerifier.deploy.js",
+    "verify:mumbai:SigVerifier": "npx hardhat verify --contract contracts/SigVerifier.sol:SigVerifier --network mumbai 0x1b5f0B433E4a30F0C40c259332187CC354f9FA59",
+    "test:permit": "npx hardhat test test/erc20-permit.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

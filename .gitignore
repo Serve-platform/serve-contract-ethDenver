@@ -11,3 +11,5 @@ cache
 artifacts
 
 .idea
+test
+contracts/*test*
