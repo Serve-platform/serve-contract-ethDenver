@@ -1,0 +1,22 @@
+{
+  "name": "ethdenver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:mumbai:serveway": "npx hardhat run --network mumbai scripts/Serveway.deploy.js",
+    "verify:mumbai:serveway": "npx hardhat verify --contract contracts/Serveway.sol:Serveway --network mumbai 0x1Ab49e94aB7A61f8574aA162fC89bB0cB0945629",
+    "deploy:mumbai:serveNFT": "npx hardhat run --network mumbai scripts/ServeNFT.deploy.js",
+    "verify:mumbai:serveNFT": "npx hardhat verify --contract contracts/ServeNFT.sol:ServeNFT --network mumbai 0x7c6A7fFb4837298bcD606B86A59958ed50b4d34F",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts": "^4.7.2",
+    "dotenv": "^16.0.1",
+    "hardhat": "^2.10.1"
+  }
+}
